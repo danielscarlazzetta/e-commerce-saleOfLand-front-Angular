@@ -1,50 +1,21 @@
-<nav class="navbar">
-  <div class="logo">
-    <h1>Tu Logo</h1>
-  </div>
-  <div class="links" [ngClass]="{'active': showLinks}">
-    <a href="#inicio">Inicio</a>
-    <a href="#parcelas">Parcelas</a>
-    <a href="#quienes-somos">Quiénes Somos</a>
-    <a href="#contacto">Contacto</a>
-  </div>
-  <button class="toggle-btn" (click)="toggleLinks()">&#9776;</button>
-</nav>
+
+<ul class="topnav">
+  <li><a class="active" href="#inicio">Inicio</a></li>
+  <li><a href="#parcelas">Parcelas</a></li>
+  <li><a href="#quienes-somos">quienes-somos</a></li>
+  <li><a href="#contacto">contacto</a></li>
+  <li class="right"><a href="#about">eliminar</a></li>
+</ul>
 
 
 <section id="inicio">
-  <div class="slideshow-container">
-
-    <div class="mySlides fade">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Google_logo_%282010-2013%29.svg" style="width:100%">
-      <div class="text">Caption Text</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <img src="https://i.blogs.es/0260ea/google-fotos-buscar/1366_2000.jpg" style="width:100%">
-      <div class="text">Caption Two</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <img
-        src="https://blogthinkbig.com/wp-content/uploads/sites/4/2023/06/mitchell-luo-jz4ca36oJ_M-unsplash.jpg?fit=5865%2C3672"
-        style="width:100%">
-      <div class="text">Caption Three</div>
-    </div>
-  
-  </div>
-  <br>
-  
-  <div style="text-align:center">
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-  </div>
+  <app-slider></app-slider>
 </section>
 
 <section id="parcelas">
-  <!-- Contenido de la sección de Parcelas -->
-  a
+  <div class="prueba1">
+    <h1>hola</h1>
+  </div>
 </section>
 
 <section id="quienes-somos">

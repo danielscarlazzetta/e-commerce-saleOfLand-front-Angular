@@ -1,152 +1,62 @@
-/* Estilos para el ejemplo, puedes personalizarlos según tu diseño */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-  }
-  
-  .logo h1 {
-    margin: 0;
-  }
-  
-  .links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  .links a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Estilos para dispositivos móviles */
-  @media screen and (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-      position: relative;
-    }
-  
-    .toggle-btn {
-      order: 3;
-      align-self: flex-end;
-      background-color: transparent;
-      border: none;
-      color: white;
-      font-size: 24px;
-      cursor: pointer;
-    }
-  
-    .links {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background-color: #333;
-    }
-  
-    .links.active {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .links a {
-      margin: 10px;
-    }
-  }
-
-section #inicio{
-    height: 100vh;
-    background-color: red;
-}
-section #parcelas{
-    background-color: chocolate;
-    height: 100vh;
-    
-}
-section #quienes-somos{
-    background-color: green;
-    height: 100vh;
-    
-}
-section #contacto{
-    background-color: yellow;
-    height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.mySlides {
-    display: none;
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Mantendrá el navbar fijo */
+  width: 100%; /* Opcional: para ocupar el 100% del ancho */
+  top: 0; /* Para colocarlo en la parte superior */
+  z-index: 1000;
 }
 
-img {
-    /*vertical-align: middle;*/
-    max-width: 100%; /* Ajusta al ancho máximo del contenedor */
-  height: 75vh; /* Establece la altura al 50% del viewport (pantalla) */
-  
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
+ul.topnav li a:hover:not(.active) {background-color: #111;}
 
-/* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav {position: static;}
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
 }
 
 
-/* The dots/bullets/indicators */
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+
+.prueba1{
+  height: 100vh;  
+  background-color: red;
 }
 
-.active {
-    background-color: #717171;
+section #parcelas {
+  background-color: chocolate;
+  height: 100vh;
+
 }
 
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+section #quienes-somos {
+  background-color: green;
+  height: 100vh;
+
 }
 
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-    .text {
-        font-size: 11px
-    }
+section #contacto {
+  background-color: yellow;
+  height: 100vh;
 }
